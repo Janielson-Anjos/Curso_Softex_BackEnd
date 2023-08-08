@@ -127,8 +127,15 @@
 
  //////////////////////// FOR ///////////////////////////////
 
-var v = 5;
+// for(var i = 1; i <=10; i++){
+//     console.log(i);
+// }
 
-v = 'teste';
+// var readline = require('readline-sync')
 
-console.log(v);
+// var numero = readline.question('digite o numero: ')
+
+// for(var i = 0; i <= numero; i++){
+//     console.log(i);
+// }
+
