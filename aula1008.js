@@ -173,6 +173,46 @@ const readline = require("readline-sync");
 // }
 
 
-console.log(celsiusParaFahrenheit(20));
+// console.log(celsiusParaFahrenheit(20));
+
+// function celsiusParaFahrenheit(valor) {
+//     const calculo = (valor * 1.8) + 32;
+//     return `A temperatura em Fahrenheit é ${calculo}`;
+// }
+
+// console.log(gerarSenha(5));
+
+// function gerarSenha(tamanho) {
+//     let senha = '';
+//     let numeroGerado;
+//     let fim = tamanho
+//     // const gerando = Math.floor(Math.random() * tamanho + 1);
+
+//     for(let i = 1; i <= fim; i++){
+        
+//         numeroGerado = (Math.floor(Math.random() * fim ));
+//         senha = senha + numeroGerado;
+
+//     }
 
 
+//     return senha;
+// }
+
+
+
+console.log(contarVogais('caju'));
+
+
+function contarVogais (palavra){
+    let totalVogal = 0;
+    const vogais = ['a', 'e', 'i', 'o', 'u'];
+
+    for (let i = 0; i < palavra.length; i++){
+        if(vogais.indexOf(palavra[i]) != -1){
+            totalVogal++;
+        }
+    }
+
+    return totalVogal;
+}
