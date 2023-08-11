@@ -175,8 +175,4 @@ const readline = require("readline-sync");
 
 console.log(celsiusParaFahrenheit(20));
 
-function celsiusParaFahrenheit(valor) {
-    const calculo = (valor * 1.8) + 32;
-    return `A temperatura em Fahrenheit é ${calculo}`;
-}
 
