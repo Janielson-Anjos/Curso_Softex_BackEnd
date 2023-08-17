@@ -1,3 +1,6 @@
+//////////////////////////// Try Catch Finnaly /////////////////////////////////
+
+
 const readline = require('readline-sync');
 // let rodar = true;
 
@@ -24,21 +27,43 @@ const readline = require('readline-sync');
 
  
 
- try {
-    let num = readline.questionInt('Digite o numero: ');
-    if (num === 0){
-        throw "erro de divisão por zero!";
-    }
-    console.log(num / 2);
- } catch (error) {
-    console.error("erro: Divisão por zero");
- } finally{
-    console.log("fechando programa!");
- }
+//  try {
+//     let num = readline.questionInt('Digite o numero: ');
+//     if (num === 0){
+//         throw "erro de divisão por zero!";
+//     }
+//     console.log(num / 2);
+//  } catch (error) {
+//     console.error("erro: Divisão por zero");
+//  } finally{
+//     console.log("fechando programa!");
+//  }
 
 
+
+//  let nome = readline.question("Digite seu nome: ");
+//  try {
+    
+//     if (nome == NaN) {
+//         let aa = parseInt(nome);
+//         console.log(nome);
+//     } else{
+//         throw "Erro"
+//     }
+    
+//  } catch (error) {
+//     console.error("erro: conversão inválida");
+//  }
+
+
+const pessoa = {
+    nome: 'testeNome',
+    sobrenome: 'testeSobrenome'
+  };
+
  try {
-    
+    console.log(cadastro.nome);
+    // throw "Erro"
  } catch (error) {
-    
+    console.error("Erro: propriedade não encontrada!");
  }
