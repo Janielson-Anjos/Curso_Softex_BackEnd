@@ -57,8 +57,8 @@ const readline = require('readline-sync');
 
 
 const pessoa = {
-    nome: 'testeNome',
-    sobrenome: 'testeSobrenome'
+    nome: readline.question('Digite o nome: ') ,
+    sobrenome: readline.question('Digite seu sobrenome: ')
   };
 
  try {
