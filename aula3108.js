@@ -169,5 +169,152 @@ const readline = require('readline-sync');
 
 ///////////////////////////// exercicio 10 //////////////////////
 
+// let pergunta1 = parseInt(readline.question("Qual a temperatura que deseja escolher: \n 1 -> de Celsius para Fahrenheit.\n 2 -> de Celsius para Kelvin.\n 3 -> de Fahrenheit para Celsius.\n 4 -> de Fahrenheit para Kelvin.\n 5 -> de Kelvin para Celsius.\n 6 -> de Kelvin para Fahrenheit\n"));
 
+// let temperatura = parseInt(readline.question("Digite a temperatura: "));
+
+
+// function celsiusFahrenheit(temperatura) {
+//     return (temperatura * 1.8) + 32;
+// }
+
+
+// function celsiusKelvin(temperatura) {
+//     return temperatura + 273;
+// }
+
+// function fahrenheitCelsius(temperatura) {
+//     return (temperatura - 32) / 1.8;
+// }
+
+// function fahrenheitKelvin(temperatura) {
+//     return (temperatura + 459.67) * (5 / 9);
+// }
+
+// function kelvinCelsius(temperatura) {
+//     return temperatura - 273;
+// }
+
+
+// function kelvinFahrenheit(temperatura) {
+//     return (temperatura / (5 / 9)) - 459.67;
+// }
+
+// switch (pergunta1) {
+//     case 1:
+//         console.log(celsiusFahrenheit(temperatura));
+//         break;
+//     case 2:
+//         console.log(celsiusKelvin(temperatura));
+//         break;
+//     case 3:
+//         console.log(fahrenheitCelsius(temperatura));
+//         break;
+//     case 4:
+//         console.log(fahrenheitKelvin(temperatura));
+//         break;
+//     case 5:
+//         console.log(kelvinCelsius(temperatura));
+//         break;
+//     case 6:
+//         console.log(kelvinFahrenheit(temperatura));
+//         break;
+//     default:
+//         break;
+// }
+
+//////////////////////////// exercicio 11 //////////////////////
+
+// let mes = parseInt(readline.question("digite o mês: "));
+// let ano = parseInt(readline.question("Digite o ano: "));
+
+
+// function Calculo(ano, mes) {
+//     let dias;
+//     switch (mes) {
+//         case 1:
+//             dias = 31;
+//             break;
+//         case 2:
+//             if (ano % 4 == 0 && (ano % 100 != 0) || (ano % 400 == 0)) {
+//                 console.log("Ano Bissexto");
+//                 dias = 29;
+//             } else {
+//                 dias = 28;
+//             }
+//             break;
+//         case 3:
+//             dias = 31;
+//             break;
+//         case 4:
+//             dias = 30;
+//             break;
+//         case 5:
+//             dias = 31;
+//             break;
+//         case 6:
+//             dias = 30;
+//             break;
+//         case 7:
+//             dias = 31;
+//             break;
+//         case 8:
+//             dias = 31;
+//             break;
+//         case 9:
+//             dias = 30;
+//             break;
+//         case 10:
+//             dias = 31;
+//             break;
+//         case 11:
+//             dias = 30;
+//             break;
+//         case 12:
+//             dias = 31;
+//             break;
+
+//         default:
+//             break;
+//     }
+//     return dias;
+// }
+
+// console.log(Calculo(ano,mes));
+
+
+///////////////////// exercicio 12 //////////////////////////////////////////////////
+
+
+// function duracao(hi, mi, hf, mf){
+
+//     let hd, md;
+//     hd = 0;
+//     if(hi >= hf){
+//         hd = 12;
+//         hf = hf + 12;
+//     }
+//     if (mi > mf) {
+//         hd = hd - 1;
+//         mf = mf + 60;
+//     }
+//     md = (mf - mi);
+//     hd = hd + (hf - hi);
+
+//     console.log(`O jogo durou ${hd} horas e ${md} minutos.`);
+
+// }
+
+
+// let hi = readline.question("Informe o horario inicial do jogo: ");
+
+// let mi = readline.question("Digite o minuto inicial: ");
+
+
+// let hf = readline.question("Informe o horario final do jogo: ");
+
+// let mf = readline.question("Digite o minuto final: ");
+
+
+// duracao(hi,mi,hf,mf);
 
