@@ -55,33 +55,11 @@ while (rodar) {
             break;
 
         case 4:
-            let pesquisaIDAlterar = readline.questionInt("Digite o ID do médico que deseja alterar: ");
-            for (const m of medicos) {
-                if (m.id === pesquisaIDAlterar) {
-                    console.log(`Médico selecionado ${m.nome}`);
-                    m.nome = readline.question("Digite o nome do médico:");
-                    m.crm = readline.question("Digite o CRM do médico:");
-                    m.especialidade = readline.question("Digite a especialidade do médico:");
-
-                }
-            }
-            console.log("Médico alterado com sucesso!");
+            alterarMedico();
             readline.keyInPause();
             break;
         case 5:
-            pesquisaIDExcluir = readline.questionInt("Digite o ID do médico que deseja excluir:");
-            for (const m of medicos) {
-                if (m.id === pesquisaIDExcluir) {
-                    console.log(`\n O Id é referente ao médico ${m.nome}`);
-                    console.log("-------------------------------");
-                    console.log(`Excluindo o médico ${m.nome} do sistema..."`);
-                    console.log("-------------------------------");
-                    medicos.splice(medicos.indexOf(m), 1);
-
-                }
-            }
-            console.log("Médico excluído com sucesso!");
-            readline.keyInPause();
+            excluirMedico();
             break;
 
         default:
@@ -90,6 +68,36 @@ while (rodar) {
             break;
     }
 
+}
+
+function excluirMedico() {
+    pesquisaIDExcluir = readline.questionInt("Digite o ID do médico que deseja excluir:");
+    for (const m of medicos) {
+        if (m.id === pesquisaIDExcluir) {
+            console.log(`\n O Id é referente ao médico ${m.nome}`);
+            console.log("-------------------------------");
+            console.log(`Excluindo o médico ${m.nome} do sistema..."`);
+            console.log("-------------------------------");
+            medicos.splice(medicos.indexOf(m), 1);
+
+        }
+    }
+    console.log("Médico excluído com sucesso!");
+    readline.keyInPause();
+}
+
+function alterarMedico() {
+    let pesquisaIDAlterar = readline.questionInt("Digite o ID do médico que deseja alterar: ");
+    for (const m of medicos) {
+        if (m.id === pesquisaIDAlterar) {
+            console.log(`Médico selecionado ${m.nome}`);
+            m.nome = readline.question("Digite o nome do médico:");
+            m.crm = readline.question("Digite o CRM do médico:");
+            m.especialidade = readline.question("Digite a especialidade do médico:");
+
+        }
+    }
+    console.log("Médico alterado com sucesso!");
 }
 
 function cadastrarMedico() {
