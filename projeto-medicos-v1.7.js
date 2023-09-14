@@ -56,7 +56,6 @@ while (rodar) {
 
         case 4:
             alterarMedico();
-            readline.keyInPause();
             break;
         case 5:
             excluirMedico();
@@ -98,6 +97,7 @@ function alterarMedico() {
         }
     }
     console.log("Médico alterado com sucesso!");
+    readline.keyInPause();
 }
 
 function cadastrarMedico() {
