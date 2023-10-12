@@ -1,3 +1,3 @@
 # Projetos-Softex
-projetos tarde
+projetos e atividades realizadas na sala e no class!
 
