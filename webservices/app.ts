@@ -12,6 +12,11 @@ const users = [
     { id: 3, name: "Bob", age: 28, email: "bob@example.com" },
 ];
 
+app.get("/", (req: Request, res: Response) => {
+    res.send("Bem vindo ao meu web service!");
+    
+});
+
 app.get("/users", (req: Request, res: Response) => {
     res.json(users);
 });
